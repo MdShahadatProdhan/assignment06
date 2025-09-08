@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Green Earth – Plant a Tree</title>
+<link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="container nav">
+      <div class="brand">Green Earth</div>
+      <nav class="menu">
+        <a href="#about">About</a>
+        <a href="#impact">Gallery</a>
+        <a href="#shop">Plant a Tree</a>
+      </nav>
+      <div class="cta">
+        <a class="btn primary" href="#donate">Plant a Tree</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <div class="leaf"> <img src="assets/hero-leaf1.png" alt=""></div>
+    <div class="container banner-inner">
+      <h1 class="title">Plant a Tree, Grow a Future</h1>
+      <p class="subtitle">Join our mission to plant 1 million trees and make the Earth greener for future generations.</p>
+      <a href="#shop" class="btn primary">Get Involved</a>
+    </div>
+    <div class="leaf"><img src="assets/hero-leaf2.png" alt=""></div>
+  </section>
+
+  <!-- Shop -->
+  <main id="shop" class="section">
+    <div class="container grid">
+      <!-- Categories -->
+      <aside class="card">
+        <div class="category-title">Categories</div>
+        <div id="categoryList" class="category-list" role="list"></div>
+      </aside>
+
+      <!-- Products -->
+      <section class="card">
+        <h3 style="padding:14px 14px 0;margin:0;color:#374151">Choose Your Trees</h3>
+        <div id="productGrid" class="products" aria-live="polite" style="padding:14px"></div>
+      </section>
+
+      <!-- Cart -->
+      <aside class="card cart">
+        <h3>Your Cart</h3>
+        <div id="cartList" class="cart-list"></div>
+        <div class="cart-footer">
+          <span>Total:</span>
+          <span id="cartTotal">৳0</span>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="about section">
+    <div class="container wrap">
+      <div class="pic"><img src="assets/about.png" alt=""></div>
+      <div>
+        <h2>About the Campaign</h2>
+        <p>Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our start, we've planted hundreds of thousands of trees worldwide. By joining our campaign, you help restore forests, create habitats for wildlife, and combat global warming.</p>
+        <ul>
+          <li>Restoration of natural habitats</li>
+          <li>Improvement of air quality</li>
+          <li>Support for local communities</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact -->
+  <section id="impact" class="impact section">
+    <div class="container">
+      <h2 style="text-align:center;margin:0 0 6px">Our Impact</h2>
+      <div class="impact-cards">
+        <div class="card impact-card"><h4>500K+</h4><p>Trees Planted</p></div>
+        <div class="card impact-card"><h4>120+</h4><p>Communities Involved</p></div>
+        <div class="card impact-card"><h4>30+</h4><p>Countries Reached</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donate Form -->
+  <section id="donate" class="donate section">
+    <div class="container wrap">
+      <div class="form">
+        <h3 style="margin:0 0 8px">Plant a Tree Today</h3>
+        <input class="input" placeholder="Your Name" type="text"/>
+        <input class="input" placeholder="Your Email Address" type="email"/>
+        <select class="input"><option>Number of Trees</option><option>1</option><option>3</option><option>5</option><option>10</option></select>
+        <button class="btn primary">Donate Now</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>© <span id="year"></span> Green Earth. All rights reserved.</footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal-body">
+        <div class="image"><img id="modalImg" alt=""/></div>
+        <div>
+          <h3 id="modalTitle" style="margin:0 0 6px"></h3>
+          <p id="modalDesc" class="desc" style="height:auto"></p>
+          <div class="meta"><span id="modalCategory" class="pill"></span><span id="modalPrice" class="price"></span></div>
+          <button id="modalAdd" class="btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spinner -->
+  <div id="spinner" class="spinner" aria-hidden="true"><div class="loader" aria-label="Loading"></div></div>
+
+  <script src='index.js'></script>
+</body>
+</html>
