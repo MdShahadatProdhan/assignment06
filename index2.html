@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Green Earth</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-green-700 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Green Earth</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#" class="hover:underline">About</a>
+        <a href="#" class="hover:underline">Gallery</a>
+        <a href="#" class="hover:underline">Plant a Tree</a>
+      </nav>
+      <button class="bg-yellow-400 text-green-900 px-4 py-2 rounded font-semibold">Plant a Tree</button>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="bg-green-100 py-12 text-center relative">
+    <h2 class="text-4xl font-bold mb-4">Plant a Tree, Grow a Future</h2>
+    <p class="mb-6">Join our mission to plant 1 million trees and make the Earth greener for future generations.</p>
+    <button class="bg-yellow-400 text-green-900 px-6 py-2 font-semibold rounded">Get Involved</button>
+  </section>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-6">
+    
+    <!-- Sidebar Categories -->
+    <aside>
+      <h3 class="text-xl font-semibold mb-4">Categories</h3>
+      <div id="category-list" class="space-y-2">
+          <button class="block px-4 py-2 bg-green-200 rounded hover:bg-green-300 active">All Trees</button>
+          <button class="block px-4 py-2 bg-green-200 rounded hover:bg-green-300 active">All Trees</button>
+          <button class="block px-4 py-2 bg-green-200 rounded hover:bg-green-300 active">All Trees</button>
+          <button class="block px-4 py-2 bg-green-200 rounded hover:bg-green-300 active">All Trees</button>
+          <button class="block px-4 py-2 bg-green-200 rounded hover:bg-green-300 active">All Trees</button>
+          <!-- Categories load here -->
+      </div>
+    </aside>
+
+    <!-- Trees Section -->
+    <section class="md:col-span-2">
+      <h3 class="text-2xl font-bold text-center mb-6">Choose Your Trees</h3>
+      <div id="tree-list" class="grid md:grid-cols-3 gap-4">
+        <!-- Tree cards load here -->
+      </div>
+    </section>
+
+    <!-- Cart Section -->
+    <aside>
+      <h3 class="text-xl font-semibold mb-4">Your Cart</h3>
+      <div id="cart" class="bg-white shadow rounded p-4 space-y-2">
+        <!-- Cart items -->
+      </div>
+      <div class="mt-4 font-bold text-lg">Total: ₹<span id="total-price">0</span></div>
+    </aside>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-50">
+    <div class="bg-white p-6 rounded shadow max-w-md relative">
+      <button id="close-modal" class="absolute top-2 right-2 text-gray-500 text-xl">&times;</button>
+      <div id="modal-content">
+        <!-- Plant details load here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Spinner -->
+  <div id="spinner" class="fixed inset-0 flex items-center justify-center bg-white bg-opacity-75 hidden">
+    <div class="loader border-4 border-green-500 border-t-transparent rounded-full w-12 h-12 animate-spin"></div>
+  </div>
+
+  <script src="index2.js"></script>
+</body>
+</html>
