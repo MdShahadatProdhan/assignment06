@@ -34,3 +34,25 @@ b. Arrays: const [first, , third] = arr;
 c. Objects: const {name, price: cost, category = 'Tree'} = item;
 
 d. Supports defaults, renaming, nested patterns, and works in function params.
+
+
+5) Template literals vs. string concatenation
+
+a. Template Literals (New in ES6)
+
+1.Written with backticks ( ` ).
+
+2.Use ${expression} to embed variables or expressions directly inside the string.
+
+3.Support multi-line strings without needing \n.
+
+4.Support tagged templates for advanced use cases.
+
+
+b. String Concatenation (Old Method)
+
+1.Uses the + operator to join strings.
+
+2.Becomes harder to read when multiple variables are involved.
+
+3.Requires \n to create multi-line strings.
