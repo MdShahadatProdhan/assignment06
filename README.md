@@ -23,3 +23,14 @@ c. filter(fn): returns a new array containing only items where the callback retu
 a. A shorter function syntax: const add = (a,b) => a + b;
 
 b. Lexically bind this (no own this), no own arguments, can’t be used as constructors, concise for inline callbacks.
+
+
+4) How does destructuring assignment work in ES6?
+
+a. Unpacks values from arrays/objects into variables:
+
+b. Arrays: const [first, , third] = arr;
+
+c. Objects: const {name, price: cost, category = 'Tree'} = item;
+
+d. Supports defaults, renaming, nested patterns, and works in function params.
